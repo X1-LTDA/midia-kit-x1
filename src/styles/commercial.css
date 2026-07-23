@@ -1,0 +1,44 @@
+.commercial { max-width: none; padding-right: max(32px, calc((100vw - var(--max)) / 2)); padding-left: max(32px, calc((100vw - var(--max)) / 2)); background: #0d0f13; }
+.commercial-metrics { margin-bottom: 70px; display: grid; grid-template-columns: 1fr 1fr; border: solid var(--line); border-width: 1px 0; }
+.commercial-metrics > div { padding: 35px 0; display: flex; align-items: center; gap: 25px; }
+.commercial-metrics > div:first-child { border-right: 1px solid var(--line); }
+.commercial-metrics strong { color: var(--yellow); font-size: clamp(3rem, 6vw, 6rem); letter-spacing: -.08em; }
+.commercial-metrics span { max-width: 190px; color: #ccc; font-size: .8rem; text-transform: uppercase; }
+.benefit-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.benefit-card { min-height: 300px; padding: 30px 25px; border: solid var(--line); border-width: 1px 1px 1px 0; transition: background .3s, transform .3s; }
+.benefit-card:first-child { border-left-width: 1px; }
+.benefit-card:hover { z-index: 2; background: #171a20; transform: translateY(-8px); }
+.benefit-card > span { color: var(--red); font-size: .7rem; font-weight: 900; }
+.benefit-card h3 { margin: 65px 0 15px; font-size: 1.25rem; text-transform: uppercase; }
+.benefit-card p { margin: 0; font-size: .91rem; }
+.media-showcase, .operation { display: grid; grid-template-columns: 1fr 1fr; min-height: 760px; }
+.media-visual, .operation-image { position: relative; min-height: 600px; overflow: hidden; }
+.media-visual img, .operation-image img { width: 100%; height: 100%; object-fit: cover; }
+.media-visual::after, .operation-image::after { position: absolute; inset: 0; content: ''; background: linear-gradient(90deg, transparent 65%, #090a0c); }
+.media-visual > span { position: absolute; z-index: 2; bottom: 32px; left: 32px; padding: 10px 14px; color: var(--ink); background: var(--yellow); font-size: .67rem; font-weight: 900; text-transform: uppercase; }
+.media-copy, .operation-copy { padding: 110px max(32px, calc((100vw - var(--max)) / 2)); padding-left: 80px; }
+.media-copy h2, .operation-copy h2 { margin: 25px 0 30px; font-size: clamp(2.5rem, 4.4vw, 5rem); }
+.media-list { margin-top: 42px; border-top: 1px solid var(--line); }
+.media-list article { padding: 22px 0; display: grid; grid-template-columns: 38px 1fr; border-bottom: 1px solid var(--line); }
+.media-list article > span { color: var(--red); font-size: .7rem; font-weight: 900; }
+.media-list h3 { margin: 0 0 5px; font-size: 1rem; text-transform: uppercase; }
+.media-list p { margin: 0; font-size: .85rem; }
+.plans-section { max-width: none; padding-right: max(32px, calc((100vw - var(--max)) / 2)); padding-left: max(32px, calc((100vw - var(--max)) / 2)); color: var(--ink); background: #f0eee8; }
+.plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+.plan-card { position: relative; min-height: 510px; padding: 38px 32px; display: flex; flex-direction: column; border: 1px solid rgba(9,10,12,.18); background: #f8f7f3; }
+.plan-card + .plan-card { border-left: 0; }
+.plan-card.featured { color: #fff; background: var(--ink); transform: translateY(-16px); }
+.plan-label { position: absolute; top: -28px; left: 0; padding: 8px 14px; color: var(--ink); background: var(--yellow); font-size: .65rem; font-weight: 900; text-transform: uppercase; }
+.plan-card h3 { margin: 0 0 12px; font-size: 1.65rem; text-transform: uppercase; }
+.plan-card > strong { color: var(--red); font-size: 1.13rem; }
+.plan-card ul { margin: 38px 0; padding: 0; list-style: none; }
+.plan-card li { position: relative; padding: 10px 0 10px 20px; border-bottom: 1px solid rgba(127,127,127,.2); color: #555; font-size: .88rem; }
+.plan-card.featured li { color: #bbb; }
+.plan-card li::before { position: absolute; left: 0; content: '—'; color: var(--red); }
+.plan-card a { margin-top: auto; font-size: .75rem; font-weight: 900; text-transform: uppercase; }
+.plan-card a b { float: right; }
+.plan-note { max-width: 850px; margin: 32px 0 0; color: #68686d; font-size: .75rem; }
+.operation-copy dl { margin: 40px 0 0; display: grid; grid-template-columns: 1fr 1fr; border: solid var(--line); border-width: 1px 0 0 1px; }
+.operation-copy dl > div { padding: 20px; border: solid var(--line); border-width: 0 1px 1px 0; }
+.operation-copy dt { color: var(--muted); font-size: .68rem; font-weight: 800; text-transform: uppercase; }
+.operation-copy dd { margin: 7px 0 0; font-weight: 800; }

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rg --files --glob '**/AGENTS.md' 'c:\\_ads\\midia-kit-x1' --sort modified)",
+      "Bash(powershell -NoProfile -Command \"$root='c:\\_ads\\midia-kit-x1'; Get-ChildItem -LiteralPath $root -Force | Select-Object Fu…)"
+    ]
+  }
+}
